@@ -1,0 +1,17 @@
+// ABSTRACT
+@import "./abstracts/variables.scss";
+@import "./abstracts/functions";
+
+// BASE
+@import "./base/reset";
+
+// COMPONENTS
+@import "./components/headings";
+@import "./components/header";
+@import "./components/nav-bar";
+@import "./components/footer";
+@import "./components/about";
+@import "./components/wrapper-imgs";
+@import "./components/culture";
+@import "./components/places";
+@import "./components/up-anchor";
