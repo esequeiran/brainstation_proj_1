@@ -1,0 +1,96 @@
+.culture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: rem(200px) 0px;
+  padding: 0px rem(100px);
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(50px);
+
+    &-separator {
+      background: linear-gradient(
+        to right,
+        $blue-color 20%,
+        $green-color,
+        orange
+      );
+      width: 80%;
+      height: rem(2px);
+      align-self: center;
+    }
+  }
+
+  &__middle {
+    display: flex;
+    justify-content: space-between;
+    height: rem(500px);
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: auto;
+    box-shadow: rem(5px) rem(5px) 20px #7e7d7d;
+    &__img {
+      width: auto;
+      height: 75%;
+      border-radius: 5px;
+    }
+  }
+
+  &-little {
+    display: flex;
+    flex-direction: row;
+    height: 48%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rem(5px) rem(5px) 20px #7e7d7d;
+    &__img {
+      height: 90%;
+      width: 50%;
+      border-radius: 5px;
+      margin-left: rem(10px);
+    }
+    &__legend {
+      margin-left: rem(5px);
+      align-self: flex-end;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+  }
+
+  &__bottom {
+    margin-top: rem(40px);
+    display: flex;
+    justify-content: space-between;
+    height: rem(400px);
+    &-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100%;
+      width: 45%;
+      box-shadow: rem(5px) rem(5px) 20px #7e7d7d;
+    }
+    &-img {
+      border-radius: 5px;
+      width: auto;
+      height: 60%;
+      margin-bottom: rem(10px);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: rem(500px);
+
+  &__item {
+    &-anchor {
+      color: $green-color;
+      font-weight: bold;
+      transition: font-style 5s ease-in-out, font-weight 5s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        color: $red-color;
+        font-style: italic;
+      }
+    }
+  }
+}

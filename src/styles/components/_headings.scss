@@ -1,0 +1,73 @@
+@use "../abstracts/breakpoints" as media;
+
+.heading {
+  color: #333;
+  font-size: rem(82px);
+
+  // @include media.query(">=sm") {
+  //   font-size: rem(52px);
+  //   color: #e53935;
+  // }
+
+  // @include media.query(">1000px", "<1005px") {
+  //   font-size: rem(100px);
+  //   color: #8e24aa;
+  // }
+
+  // @include media.query(">=md") {
+  //   font-size: rem(72px);
+  //   color: #1e88e5;
+  // }
+
+  @include media.query("<=lg") {
+    font-size: rem(80px);
+  }
+
+  // @include media.query(">=xl") {
+  //   font-size: rem(92px);
+  //   color: #fb8c00;
+  // }
+  &__container {
+    background-image: url("../../assets/images/banner-tucan.jpg");
+    width: 100%;
+    opacity: 0.9;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    position: relative;
+
+    &-overlay {
+      position: absolute;
+
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $black-color;
+      opacity: 0.4;
+      z-index: 2;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: rem(120px);
+    left: rem(300px);
+    color: $white-color;
+    &-title {
+      z-index: 3;
+    }
+    &-legend {
+      z-index: 3;
+    }
+  }
+  &__banner {
+  }
+}

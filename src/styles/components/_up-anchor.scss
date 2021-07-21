@@ -1,0 +1,33 @@
+.up-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: rem(20px) rem(20px);
+
+  &__anchor {
+    display: inline-block;
+    position: fixed;
+    bottom: rem(80px);
+    right: rem(15px);
+  }
+
+  &__span {
+    border: rem(4px) solid $green-color;
+    display: inline-block;
+    width: rem(50px);
+    height: rem(50px);
+    border-radius: 50%;
+    &:after {
+      content: "";
+      display: inline-block;
+      margin-top: rem(18px);
+      margin-left: rem(14px);
+      width: rem(18px);
+      height: rem(20px);
+      border-top: rem(5px) solid $green-color;
+      border-right: rem(5px) solid $green-color;
+      -moz-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+  }
+}
