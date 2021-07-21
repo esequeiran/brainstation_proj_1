@@ -1,14 +1,22 @@
+@use "../abstracts/breakpoints" as media;
 .nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: rem(500px);
+  display: none;
+
+  @include media.query(">=lg") {
+    display: inline-block;
+    width: rem(550px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: rem(30px);
+  }
 
   &__item {
     &-anchor {
       color: $green-color;
       font-weight: bold;
       transition: font-style 5s ease-in-out, font-weight 5s ease-in-out;
+      z-index: 100;
       &:hover {
         cursor: pointer;
         color: $red-color;

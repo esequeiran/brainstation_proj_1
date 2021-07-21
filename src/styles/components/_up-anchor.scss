@@ -1,7 +1,12 @@
+@use "../abstracts/breakpoints" as media;
 .up-container {
-  display: flex;
-  justify-content: flex-end;
-  padding: rem(20px) rem(20px);
+  display: none;
+
+  @include media.query(">=lg") {
+    display: flex;
+    justify-content: flex-end;
+    padding: rem(20px) rem(20px);
+  }
 
   &__anchor {
     display: inline-block;

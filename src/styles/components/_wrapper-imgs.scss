@@ -1,18 +1,29 @@
+@use "../abstracts/breakpoints" as media;
 .container-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: rem(200px) 0px;
-  padding: 0px rem(100px);
   justify-content: center;
+  margin: rem(50px) 0px;
+
+  @include media.query(">=lg") {
+    margin: rem(200px) 0px;
+    padding: 0px rem(100px);
+  }
+
   &__title {
     margin-bottom: rem(50px);
+    font-size: 20px;
   }
 }
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+
+  @include media.query(">=lg") {
+    justify-content: space-between;
+  }
 }
 
 .card-img {
@@ -20,10 +31,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  width: 25%;
-  margin: 0px rem(5px);
+  width: 90%;
   margin-bottom: rem(20px);
   transition: box-shadow 1s ease-in-out, transform 1s ease-in-out;
+
+  @include media.query(">=lg") {
+    width: 25%;
+    margin: 0px rem(5px);
+    margin-bottom: rem(20px);
+  }
 
   &:hover {
     box-shadow: rem(5px) rem(5px) 20px #7e7d7d;
