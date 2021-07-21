@@ -13,11 +13,12 @@
     padding: rem(10px) 0px;
     box-shadow: rem(5px) rem(10px) #7e7d7d;
     z-index: 0;
-    height: rem(60px);
+    height: rem(80px);
   }
+
   &__logo {
     cursor: pointer;
-
+    display: inline-block;
     &:focus {
       border: 5px solid $red-color;
     }

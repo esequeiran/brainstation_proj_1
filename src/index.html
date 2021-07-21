@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="header">
-      <div>
+      <div class="header__container-logo">
         <a href="#heading" class="header__logo" aria-describedby="heading"
           ><img
             class="header__logo-img"
@@ -27,9 +27,17 @@
             alt="Flag of Costa Rica with national emblem"
         /></a>
       </div>
+      <div class="hamburguer-menu">
+        <button id="fs-hamb-btn" class="hamburguer-menu__btn">
+          <span class="hamburguer-menu__line"></span>
+          <span class="hamburguer-menu__line"></span>
+          <span class="hamburguer-menu__line"></span>
+        </button>
+      </div>
+      <nav class="nav-container">
 
-      <nav>
         <ul class="nav">
+          
           <li class="nav__item">
             <a href="#about" class="nav__item-anchor">Costa Rica</a>
           </li>
@@ -255,6 +263,7 @@
             </div>
           </div>
         </section>
+
         <section id="culture" class="culture">
           <div class="culture__header">
             <div class="culture__header-separator"></div>
