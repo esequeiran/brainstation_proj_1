@@ -2,10 +2,10 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: rem(10px) rem(10px);
+  padding: rem(10px) rem(20px);
   box-shadow: rem(5px) rem(5px) rem(20px) #7e7d7d;
   position: fixed;
-  width: 99vw;
+  width: 100%;
   background-color: $white-color;
   z-index: 6;
   @include media.query(">=lg") {
@@ -13,9 +13,15 @@
     padding: rem(10px) 0px;
     box-shadow: rem(5px) rem(10px) #7e7d7d;
     z-index: 0;
+    height: rem(60px);
   }
   &__logo {
     cursor: pointer;
+
+    &:focus {
+      border: 5px solid $red-color;
+    }
+
     &-img {
       height: rem(40px);
       width: auto;

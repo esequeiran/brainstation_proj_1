@@ -6,6 +6,8 @@
     display: flex;
     justify-content: flex-end;
     padding: rem(20px) rem(20px);
+
+    z-index: 7;
   }
 
   &__anchor {
@@ -13,6 +15,9 @@
     position: fixed;
     bottom: rem(80px);
     right: rem(15px);
+    &:focus {
+      border: 5px solid $red-color;
+    }
   }
 
   &__span {
@@ -21,6 +26,8 @@
     width: rem(50px);
     height: rem(50px);
     border-radius: 50%;
+    background-color: $white-color;
+
     &:after {
       content: "";
       display: inline-block;

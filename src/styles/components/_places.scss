@@ -44,17 +44,19 @@
     width: 30%;
     height: 50%;
     padding: rem(10px) rem(10px);
-    color: $white-color;
+    color: $black-color;
     transition: border 1s ease-in-out, transform 1.5s ease-in-out;
-
+    font-weight: 800;
     font-style: normal;
     &:hover {
       cursor: pointer;
       color: $green-color;
       background-color: transparent;
       border: 1px solid $green-color;
-
       transform: rotate(360deg);
+    }
+    &:focus {
+      border: 5px solid $red-color;
     }
   }
 }

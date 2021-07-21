@@ -20,7 +20,7 @@
   <body>
     <header class="header">
       <div>
-        <a href="#heading" class="header__logo"
+        <a href="#heading" class="header__logo" aria-describedby="heading"
           ><img
             class="header__logo-img"
             src="./assets/images/bandera.gif"
@@ -51,7 +51,7 @@
 
     <main>
       <section id="heading" class="heading">
-        <div class="heading__container">
+        <div id="toucan-banner" class="heading__container" aria-describedby="toucan-banner">
           <div class="heading__container-overlay"></div>
         </div>
         <div class="heading__wrapper">
@@ -76,15 +76,20 @@
       </section>
       <article>
         <section id="about" class="about">
-          <div class="about__container-decoration"></div>
+          <div class="about__container-decoration" data-aos="flip-left" data-aos-duration="500"></div>
           <video
             loop="true"
             src="./assets/images/crVideo.mp4"
             class="about__container-video"
             autoplay
             muted
+            aria-describedby="nature video about Costa Rica"
+            data-aos="flip-left" data-aos-duration="1000"
+            data-aos-delay="500"
           ></video>
-          <div class="about__container">
+          <div class="about__container" data-aos="zoom-in-up"
+          data-aos-duration="1000"
+            data-aos-delay="1500">
             <h2 class="about__container-title">About</h2>
             <p class="about__container-parragraph">
               Costa Rica is a country located in Central America that is ranked
@@ -99,23 +104,26 @@
         <section id="plants" class="container-wrapper">
           <h2 class="container-wrapper__title">Plants</h2>
           <div class="wrapper">
-            <div class="card-img">
-              <img class="card-img__img" src="./assets/images/arbol-gte.jpg" />
+            <div class="card-img" data-aos="zoom-in-left" data-aos-duration="1000">
+              <img class="card-img__img" src="./assets/images/arbol-gte.jpg" alt="Guanacaste tree landscape"/>
               <span class="card-img__text">Guanacaste Tree</span>
             </div>
 
-            <div class="card-img">
+            <div class="card-img" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1000">
               <img
                 class="card-img__img"
                 src="./assets/images/guaria-morada.jpg"
+                alt="Purple Orchid"
               />
               <span class="card-img__text">Purple Orchid</span>
             </div>
 
-            <div class="card-img">
+            <div class="card-img" data-aos="zoom-in-right" data-aos-duration="1000">
               <img
                 class="card-img__img"
                 src="./assets/images/arbol-maliche.jpg"
+                alt="Malinche tree landscape, red flower"
+                
               />
               <span class="card-img__text">Malinche Tree</span>
             </div>
@@ -125,75 +133,123 @@
         <section id="animals" class="container-wrapper">
           <h2 class="container-wrapper__title">Animals</h2>
           <div class="wrapper">
-            <div class="card-img">
-              <img src="./assets/images/colibri.jpeg" class="card-img__img" />
+            <div class="card-img" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+              <img src="./assets/images/colibri.jpeg" class="card-img__img" 
+              alt="Hummingbird on a branch"/>
               <span class="card-img__text">Hummingbird</span>
             </div>
-            <div class="card-img">
-              <img class="card-img__img" src="./assets/images/danta.jpg" />
-              <span class="card-img__text">Danta</span>
+            <div class="card-img"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+              <img class="card-img__img" src="./assets/images/danta.jpg" 
+              alt="Tapir in the bushes"/>
+              <span class="card-img__text">Tapir</span>
             </div>
 
-            <div class="card-img">
-              <img class="card-img__img" src="./assets/images/manati.jpg" />
+            <div class="card-img"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+              <img class="card-img__img" src="./assets/images/manati.jpg"
+              alt="Manatee smiling in the sea" />
               <span class="card-img__text">Manatee</span>
             </div>
 
-            <div class="card-img">
-              <img class="card-img__img" src="./assets/images/mono-congo.jpg" />
+            <div class="card-img"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+              <img class="card-img__img" src="./assets/images/mono-congo.jpg" 
+              alt="Monkey among leaves"/>
               <span class="card-img__text">Congo monkey</span>
             </div>
 
-            <div class="card-img">
+            <div class="card-img"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
               <img
                 class="card-img__img"
                 src="./assets/images/oso-perezoso.jpg"
-              />
+              alt="sloth raising his arm"
+                />
               <span class="card-img__text">Sloth</span>
             </div>
 
-            <div class="card-img">
-              <img class="card-img__img" src="./assets/images/pizote.jpg" />
+            <div class="card-img"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+              <img class="card-img__img" src="./assets/images/pizote.jpg" 
+              alt="coati in nature"/>
               <span class="card-img__text">Coati</span>
             </div>
 
-            <div class="card-img">
-              <img class="card-img__img" src="./assets/images/pumas.jpg" />
-              <span class="card-img__text">Puma</span>
+            <div class="card-img"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+              <img class="card-img__img" src="./assets/images/pumas.jpg" 
+              alt="Couple of cougar embraced in the night"
+              />
+              <span class="card-img__text">Cougar</span>
             </div>
-            <div class="card-img">
+            <div class="card-img"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
               <img
                 class="card-img__img"
                 src="./assets/images/rana-multicolor.jpg"
+                alt="Red eyed frog on a green leaf"
               />
               <span class="card-img__text">Red eyed frog</span>
             </div>
 
-            <div class="card-img">
+            <div class="card-img"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
               <img
                 class="card-img__img"
                 src="./assets/images/tiburon-martillo.jpeg"
+                alt="Hammerhead shark rear view"
               />
               <span class="card-img__text">Hammerhead shark</span>
             </div>
 
-            <div class="card-img">
-              <img class="card-img__img" src="./assets/images/tucan.jpg" />
+            <div class="card-img"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+              <img class="card-img__img" src="./assets/images/tucan.jpg" 
+              alt="Toucan on a branch"/>
               <span class="card-img__text">toucan</span>
             </div>
 
-            <div class="card-img">
+            <div class="card-img"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
               <img
                 class="card-img__img"
                 src="./assets/images/venado-cola-blanca.jpg"
+                alt="White tailed deer in the dry forest"
               />
               <span class="card-img__text">White tailed deer</span>
             </div>
 
-            <div class="card-img">
+            <div class="card-img"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
               <img
                 class="card-img__img"
                 src="./assets/images/pacific-green-sea-turtle.jpg"
+                alt="Green turtle in the sea"
               />
               <span class="card-img__text">Green sea turtle</span>
             </div>
@@ -205,152 +261,212 @@
             <h2 class="culture__header-title">Culture</h2>
           </div>
           <div class="culture__middle">
-            <div class="culture-card">
+            <div class="culture-card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
               <img
                 class="culture-card__img"
                 src="./assets/images/mascarada.jpg"
+              alt="Three colorful costumes in a cultural party"
               />
               <h3>Masquerade</h3>
-              <p>Mascarade is a tradition</p>
+              <p>Mascarade is a very traditional and popular festivity</p>
             </div>
             <div class="culture__wrapper">
-              <div class="culture-little">
+              <div class="culture-little" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <img
                   class="culture-little__img"
                   src="./assets/images/pintura-carreta.jpg"
+                  alt="Mr. painting a typical national cart in a very colorful way"
                 />
                 <div class="culture-little__legend">
                   <h3>Handmade painting</h3>
-                  <p>Mascarade is a tradition</p>
+                  <p>Unique and coloful painted designs on a cart</p>
                 </div>
               </div>
-              <div class="culture-little">
+              <div class="culture-little" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <img
                   class="culture-little__img"
                   src="./assets/images/marimberos.jpg"
+                  alt="Four musicians playing a marimba at a typical festival"
                 />
                 <div class="culture-little__legend">
                   <h3>Music</h3>
-                  <p>Mascarade is a tradition</p>
+                  <p>An important instrument for this type of musci es the "marimba"</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="culture__bottom">
-            <div class="culture__bottom-card">
+            <div class="culture__bottom-card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
               <img
                 class="culture__bottom-img"
                 src="./assets/images/baile-Costa-Rica.jpg"
+                alt="Costa Rican women dancing in colorful costumes"
               />
               <h3>Folk dance</h3>
-              <p>Mascarade is a tradition</p>
+              <p>Guanacaste is the heardland of Costa Rican folkloric music and dancing</p>
             </div>
-            <div class="culture__bottom-card">
+            <div class="culture__bottom-card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
               <img
                 class="culture__bottom-img"
                 src="./assets/images/reserva-indigena.jpg"
+                alt="Costa Rican Indians cooking with natural instruments"
               />
               <h3>Bríbrí reserve</h3>
-              <p>Mascarade is a tradition</p>
+              <p>The Bribri are an indigenous people of Costa Rica. They live in the Talamanca canton</p>
             </div>
           </div>
         </section>
 
         <section id="places" class="places">
           <div class="culture__header">
-            <div class="culture__header-separator"></div>
             <h2 class="culture__header-title">Where to go</h2>
+            <div class="culture__header-separator"></div>
+          
           </div>
 
           <div class="wrapper">
-            <div class="card-places">
+            <div class="card-places" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="1500">
               <div class="card-places__text">
-                <a class="card-places__anchor">View More </a>
+                <a class="card-places__anchor"
+                href="https://goplaya.cr/es/playa/dantita-guanacaste-costa-rica-" target="_blank">View More </a>
               </div>
 
               <img
                 class="card-places__img"
                 src="./assets/images/playa-dantita.jpg"
+                alt="Dantita beach landscape"
               />
             </div>
 
-            <div class="card-places">
+            <div class="card-places"  data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="1500">
               <img
                 class="card-places__img"
                 src="./assets/images/volcan-arenal.jpg"
+                alt="Arenal volcano landscape"
               />
               <div class="card-places__text">
-                <a class="card-places__anchor">View More </a>
+                <a class="card-places__anchor"
+                target="_blank"
+                href="http://www.sinac.go.cr/ES/ac/ACAHN/pnva/Paginas/default.aspx">View More </a>
               </div>
             </div>
 
-            <div class="card-places">
+            <div class="card-places"  data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="1500">
               <div class="card-places__text">
-                <a class="card-places__anchor">View More </a>
+                <a class="card-places__anchor"
+                target="_blank"
+                href="https://goplaya.cr/es/playa/montezuma-puntarenas">View More </a>
               </div>
               <img
                 class="card-places__img"
                 src="./assets/images/playa-montezuma.jpg"
+                alt="Montezuma beach landscape"
               />
             </div>
 
-            <div class="card-places">
+            <div class="card-places"  data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="1500">
               <div class="card-places__text">
-                <a class="card-places__anchor">View More </a>
+                <a class="card-places__anchor"
+                target="_blank"
+                href="http://www.sinac.go.cr/ES/ac/accvc/pnvi/Paginas/default.aspx">View More </a>
               </div>
               <img
                 class="card-places__img"
                 src="./assets/images/volcan-irazu.jpg"
+                alt="Irazú volcano landscape"
               />
             </div>
 
-            <div class="card-places">
+            <div class="card-places"  data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="1500">
               <img
                 class="card-places__img"
                 src="./assets/images/playa-nacascolo.jpg"
+                alt="Nacascolo beach landscape"
               />
               <div class="card-places__text">
-                <a class="card-places__anchor">View More </a>
+                <a class="card-places__anchor"
+                target="_blank"
+                href="https://goplaya.cr/es/playa/nacascolo">View More </a>
               </div>
             </div>
 
-            <div class="card-places">
+            <div class="card-places"  data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="1500">
               <div class="card-places__text">
-                <a class="card-places__anchor">View More </a>
+                <a class="card-places__anchor"
+                target="_blank"
+                href="http://www.sinac.go.cr/ES/ac/accvc/pnvp/Paginas/default.aspx">View More </a>
               </div>
               <img
                 class="card-places__img"
                 src="./assets/images/volcan-poas.jpg"
+                alt="Poás volcano landscape"
               />
             </div>
 
-            <div class="card-places">
+            <div class="card-places"  data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="1500">
               <div class="card-places__text">
-                <a class="card-places__anchor">View More </a>
+                <a class="card-places__anchor"
+                target="_blank"
+                href="https://goplaya.cr/es/playa/punta-uva-limon-costa-rica-playa-manzanillo">View More </a>
               </div>
               <img
                 class="card-places__img"
                 src="./assets/images/playa-punta-uva.jpg"
+                alt="Punta uva beach landscape"
               />
             </div>
 
-            <div class="card-places">
+            <div class="card-places"  data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="1500">
               <img
                 class="card-places__img"
                 src="./assets/images/volcan-turrialba.jpg"
+                alt="Turrialba volcano landscape"
               />
               <div class="card-places__text">
-                <a class="card-places__anchor">View More </a>
+                <a class="card-places__anchor"
+                target="_blank"
+                href="http://www.sinac.go.cr/ES/ac/accvc/pnvt/Paginas/default.aspx">View More </a>
               </div>
             </div>
 
-            <div class="card-places">
+            <div class="card-places"  data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="1500">
               <div class="card-places__text">
-                <a class="card-places__anchor">View More </a>
+                <a class="card-places__anchor"
+                target="_blank"
+                href="https://goplaya.cr/es/playa/quesera-curu-nicoya-peninsula-puntarenas-costa-rica-playa">View More </a>
               </div>
               <img
                 class="card-places__img"
                 src="./assets/images/playa-quesera.jpg"
+                alt="Quesera beach landscape"
               />
             </div>
           </div>

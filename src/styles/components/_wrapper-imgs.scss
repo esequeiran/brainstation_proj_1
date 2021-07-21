@@ -13,7 +13,8 @@
 
   &__title {
     margin-bottom: rem(50px);
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: bold;
   }
 }
 .wrapper {
@@ -42,14 +43,14 @@
   }
 
   &:hover {
-    box-shadow: rem(5px) rem(5px) 20px #7e7d7d;
+    box-shadow: rem(5px) rem(5px) 20px $gray-color;
     transform: translate(-10px, -10px);
   }
   &__img {
     height: rem(180px);
     width: auto;
     margin-bottom: rem(10px);
-    box-shadow: rem(5px) rem(5px) 20px #7e7d7d;
+    box-shadow: rem(5px) rem(5px) 20px $gray-color;
     border-radius: 5px;
   }
   &__text {
